@@ -1,33 +1,58 @@
 1 - Por que o Linux recebeu esse nome?
+  O nome Linux surgiu da mistura de Linus + Unix. Linus é o nome do criador do Linux, Linus Torvalds. E Unix, é o nome de um 
+sistema operacional de grande porte.
 
-2 - O que s�o daemons?
+2 - O que são daemons?
+        é um programa de computador que executa como um processo em plano de fundo, em vez de estar sob o controle direto de 
+um usuário interativo.
 
-3 - O que � o shell?
+3 - O que é o shell?
+       É o intérprete de comandos, ou seja, é a interface entre o usuário e o sistema operacional, e é por esta razão que seu 
+nome em inglês é shell.
 
-4 - Por que � importante evitar executar o terminal como super-usu�rio?
+4 - Por que é importante evitar executar o terminal como super-usuário?
+        Pois quando você está como super usuário, possui o controle total sobre o sistema, e caso não tenha senha, a segurança
+se torna arriscada, podendo alguém manipular todos os processos do seu computador.
 
-5 - Qual bot�o do teclado completa o que o usu�rio escreve no terminal, de acordo com o contexto?
+5 - Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
+        TAB.
 
-6 - Quais bot�es do teclado apresentam instru��es escritas anteriormente?
+6 - Quais botões do teclado apresentam instruções escritas anteriormente?
+        Tecla para cima; ctlr + r e inicia digitação;  ctrl + s e inicia digitação
 
 7 - Apresente os respectivos comandos no terminal para: 
-(a) Obter mais informa��es sobre um comando. 
+
+(a) Obter mais informações sobre um comando. 
+        comando man, ajuda on-line; info
+        
 (b) Apresentar uma lista com os arquivos dentro de uma pasta. 
+        comando ls;
+
 (c) Apresentar o caminho completo da pasta. 
+        
+        
 (d) Trocar de pasta. 
+        cd <nome da pasta>;
+        
 (e) Criar uma pasta. 
+        mkdir <nome da pasta>;
+
 (f) Apagar arquivos definitivamente. 
-(g) Apagar pastas definitivamente. 
+        rm <nome do arquivo>
+
+(g) Apagar pastas definitivamente.
+        
+        
 (h) Copiar arquivos. 
 (i) Copiar pastas. 
 (j) Mover arquivos. 
 (k) Mover pastas. 
 (l) Renomear pastas. 
-(m) Apresentar o conte�do de um arquivo. 
+(m) Apresentar o conteúdo de um arquivo. 
 (n) Apresentar o tipo de um arquivo.
 (o) Limpar a tela do terminal. 
-(p) Encontrar ocorr�ncias de palavras-chave em um arquivo-texto. 
-(q) Ordenar informa��es em um arquivo-texto. 
-(r) Substituir ocorr�ncias de palavras-chave em um arquivo-texto. 
-(s) Conferir se dois arquivos s�o iguais. 
-(t) Escrever algo na tela.de 16 bits, como ele soma duas vari�veis de 32 bits?
+(p) Encontrar ocorrências de palavras-chave em um arquivo-texto. 
+(q) Ordenar informações em um arquivo-texto. 
+(r) Substituir ocorrências de palavras-chave em um arquivo-texto. 
+(s) Conferir se dois arquivos são iguais. 
+(t) Escrever algo na tela.de 16 bits, como ele soma duas variáveis de 32 bits?
