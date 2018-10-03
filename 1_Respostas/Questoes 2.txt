@@ -68,13 +68,13 @@ se torna arriscada, podendo alguém manipular todos os processos do seu computad
   clear ou ctrl+l
   
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto. 
-
+  comando grep
 
 (q) Ordenar informações em um arquivo-texto. 
 
 
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto. 
-
+  comando sed g
 
 (s) Conferir se dois arquivos são iguais. 
 
