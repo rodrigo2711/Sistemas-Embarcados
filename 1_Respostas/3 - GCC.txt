@@ -4,8 +4,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
   1-  Crie um "Olá mundo!" em C.
       $ nano Ola_mundo.c
-      
-     
+         
       #include<stdio.h>
       int main(void){
       printf("Olá mundo! \n");
@@ -40,39 +39,44 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
       $ Digite seu nome: Rodrigo
         Ola Rodrigo
         
-
   3-  Apresente os comportamentos do código anterior nos seguintes casos:
 
 (a) Se o usuário insere mais de um nome.
 
-$ ./ola_usuario_1
-$ Digite o seu nome: Eu Mesmo
+    $ ./ola_usuario_1
+    $ Digite o seu nome: Rodrigo Sousa
+    % Olá Rodrigo
 
 (b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
 
-$ ./ola_usuario_1
-$ Digite o seu nome: "Eu Mesmo"
+    $ ./ola_usuario_1
+    $ Digite o seu nome: "Eu Mesmo"
+    % Olá "Rodrigo
 
 (c) Se é usado um pipe. Por exemplo:
 
-$ echo Eu | ./ola_usuario_1
+    $ echo Eu | ./ola_usuario_1
+    $ Ola Rodrigo
 
 (d) Se é usado um pipe com mais de um nome. Por exemplo:
 
-$ echo Eu Mesmo | ./ola_usuario_1
+    $ echo Eu Mesmo | ./ola_usuario_1
+    $ Ola Rodrigo
 
 (e) Se é usado um pipe com mais de um nome entre aspas duplas. Por exemplo:
 
-$ echo "Eu Mesmo" | ./ola_usuario_1
+    $ echo "Eu Mesmo" | ./ola_usuario_1
+    $ Ola Rodrigo
 
 (f) Se é usado o redirecionamento de arquivo. Por exemplo:
 
-$ echo Ola mundo cruel! > ola.txt
-$ ./ola_usuario_1 < ola.txt
+    $ echo Ola mundo cruel! > ola.txt
+    $ ./ola_usuario_1 < ola.txt
+    $ Ola Ola
 
     4 - Crie um código em C que recebe o nome do usuário como um argumento de entrada (usando as variáveis argc e *argv[]), e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_2':
 
-$ ./ola_usuario_2 Eu
+$ ./ola_usuario_2  Eu
 $ Ola Eu
 
     5 - Apresente os comportamentos do código anterior nos seguintes casos:
