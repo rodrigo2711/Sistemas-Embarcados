@@ -56,11 +56,27 @@ se torna arriscada, podendo alguém manipular todos os processos do seu computad
     mv -r <origem> <destino> 
 
 (l) Renomear pastas. 
+
+
 (m) Apresentar o conteúdo de um arquivo. 
+  cat <nome do arquivo>
+
 (n) Apresentar o tipo de um arquivo.
+
+
 (o) Limpar a tela do terminal. 
+  clear ou ctrl+l
+  
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto. 
+
+
 (q) Ordenar informações em um arquivo-texto. 
+
+
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto. 
+
+
 (s) Conferir se dois arquivos são iguais. 
+
+
 (t) Escrever algo na tela.de 16 bits, como ele soma duas variáveis de 32 bits?
