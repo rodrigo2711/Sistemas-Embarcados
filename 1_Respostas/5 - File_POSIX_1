@@ -96,4 +96,9 @@ Fechar: int close(int fildes(1))
     
 
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
-
+    
+    #include <stdio.h>
+    #include <unistd.h>
+    #include <fcntl.h>
+    #include <termios.h>
+    
