@@ -1,7 +1,6 @@
 #include "gpio_sysfs.h"
 #include <unistd.h>
 
-
 int main()
 {
 	int pin=18;
