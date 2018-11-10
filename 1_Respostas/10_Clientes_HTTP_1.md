@@ -1,5 +1,8 @@
 1. Especifique algumas portas importantes pré-definidas para o protocolo TCP/IP.
 
+       HTTP Porta 80
+       HTTPS Porta 8080
+
 2. Com relação a endereços IP, responda:
 
 (a) Qual é a diferença entre endereços IP externos e locais?
