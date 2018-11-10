@@ -3,6 +3,8 @@
 Para todas as questões, escreva os comandos correspondentes no terminal.
 
 1 - Escreva o texto "Ola mundo cruel!" em um arquivo denominado "Ola_mundo.txt". Apresente o conteúdo deste arquivo no terminal.
+  
+  
     nano Ola_mundo.txt
     Olá mundo cruel! 
     CRTL + O
