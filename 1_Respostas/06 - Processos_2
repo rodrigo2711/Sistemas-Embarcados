@@ -65,6 +65,24 @@ return 0;
 
 3. Crie um código em C que recebe o nome de diversos comandos pelos argumentos de entrada (`argc` e `*argv[]`), e executa cada um usando `fork()` e `exec()`.
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+
+int main(int argc, char** argv){
+	int i;
+	
+	for (i = 1; i < argc; i++){
+		if(fork()==0){
+			char* aux[] = {argv[i],NULL};
+			execvp(argv[i],aux);
+			printf("Erro: não executou o %s\n",argv[i]);
+			break;
+		}
+	}
+}
 
 4. Crie um código em C que gera três processos-filho usando o `fork()`, e que cada processo-filho chama a seguinte função uma vez:
 
