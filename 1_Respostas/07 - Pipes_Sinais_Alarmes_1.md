@@ -19,13 +19,13 @@ pipe(fd);
 	Nesse caso, a pipe é criada depois do fork, com isso temos 2 pipes.
 	
 2. Apresente mais cinco sinais importantes do ambiente Unix, além do `SIGSEGV`, `SIGUSR1`, `SIGUSR2`, `SIGALRM` e `SIGINT`. Quais são suas características e utilidades?
-
+```
 	SIGQUIT: Sinal emitido aos processos do terminal quando as teclas de abandono do teclado são acionadas.
 	SIGPIPE: Sinal emitido quando ocorre a escrita sobre um pipe não aberto em leitura.
 	SIGKILL: Sinal emitido para matar processos. Não pode ser ignorado nem interceptado.  
 	SIGHUP: Sinal emitido aos processos associados a um terminal quando este se "desconecta" (corte).
 	SIGSYS: Sinal emitido quando é colocado argumento incorreto de uma chamada de sistema. 
-
+```
 3. Considere o código a seguir:
 
 ```C
