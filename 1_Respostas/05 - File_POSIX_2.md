@@ -4,7 +4,26 @@ Para todas as questões, utilize as funções da norma POSIX (open(), close(), w
 
 1 -    Crie um código em C para escrever "Ola mundo!" em um arquivo chamado 'ola_mundo.txt'.
 
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <unistd.h>
+    #include <fcntl.h>
+    #include <termios.h>
+    #include <string.h>
 
+    int main(){
+    char buf[30];
+    int fp;
+
+    fp = open("olamundo.txt", O_WRONLY | O_CREAT, S_IRWXU);	
+
+     sprintf(buf,"Olá Mundo");
+     write(fp,buf,strlen(buf));
+     close(fp);
+
+      return 0;
+    }
+  
 2 -    Crie um código em C que pergunta ao usuário seu nome e sua idade, e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
   #include <stdio.h>
