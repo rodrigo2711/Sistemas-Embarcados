@@ -12,5 +12,6 @@
     I2C, SPI e UART. 
     
 2. Apresente outras 3 bibliotecas de acesso I/O em C para o Raspberry Pi.
-``
+```
     WiringPi, Sysfs e OpenCV.
+```
