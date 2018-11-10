@@ -1,4 +1,4 @@
-# Sistemas-Embarcados
+# Sistemas Embarcados
 
-# RODRIGO SOUSA SANTOS 
-# 14/0031219
+ RODRIGO SOUSA SANTOS 
+ 14/0031219
