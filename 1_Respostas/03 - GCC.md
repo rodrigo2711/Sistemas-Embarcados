@@ -4,7 +4,6 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
   1-  Crie um "Olá mundo!" em C.
  
- ```
       $ nano Ola_mundo.c
          
       #include<stdio.h>
@@ -20,11 +19,10 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
       $ gcc Ola_mundo.c
       $ gcc Ola_mundo.c -o mundo
       $ ./mundo  
-       ```
-  
-  2-  Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
+       
+2-  Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
- ```
+
       $ $nano questao2.c
       
       #include <stdio.h>
@@ -43,7 +41,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
       $ Digite seu nome: Rodrigo
         Ola Rodrigo
        ```
-  3-  Apresente os comportamentos do código anterior nos seguintes casos:
+ 3-  Apresente os comportamentos do código anterior nos seguintes casos:
 
 (a) Se o usuário insere mais de um nome.
 
