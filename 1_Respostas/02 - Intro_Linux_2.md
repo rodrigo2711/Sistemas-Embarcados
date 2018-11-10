@@ -12,17 +12,20 @@ Para todas as questões, escreva os comandos correspondentes no terminal.
     cat Ola_mundo.txt
 
 2 - Apresente o nome de todos os arquivos e pastas na pasta 'root'.
+ 
     sudo su
     cd /root
     ls -la
 
 3 - Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
+ 
     sudo su
     cd /root
     ls -l
 
 4 - Apresente somente as pastas dentro da pasta 'root'.
-     sudo su
+    
+    sudo su
     cd /root
     ls -d */
 
@@ -42,24 +45,31 @@ Para todas as questões, escreva os comandos correspondentes no terminal.
        
 6 - Para as questões a seguir, use a pasta no endereço https://github.com/DiogoCaetanoGarcia/Sistemas_Embarcados/raw/master/Questoes/02_Intro_Linux_arqs.zip
 
-    Liste somente os arquivos com extensão .txt.
+   Liste somente os arquivos com extensão .txt.
+   
     ls -l *.txt
     
-    Liste somente os arquivos com extensão .png.
+   Liste somente os arquivos com extensão .png.
+   
     ls -l *.png
 
-    Liste somente os arquivos com extensão .jpg.
+   Liste somente os arquivos com extensão .jpg.
+    
     ls -l *.jpg
 
-    Liste somente os arquivos com extensão .gif.
+   Liste somente os arquivos com extensão .gif.
+  
     ls -l *.gif
 
-    Liste somente os arquivos que contenham o nome 'cal'.
+   Liste somente os arquivos que contenham o nome 'cal'.
+
     ls -l *cal*
 
-    Liste somente os arquivos que contenham o nome 'tux'.
+   Liste somente os arquivos que contenham o nome 'tux'.
+  
     ls -l *tux*
 
-    Liste somente os arquivos que comecem com o nome 'tux'.
+   Liste somente os arquivos que comecem com o nome 'tux'.
+   
     ls -l tux*
 
