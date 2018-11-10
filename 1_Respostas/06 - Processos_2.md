@@ -16,12 +16,14 @@ pid_t child_3;
 int a,b,c;
 
 printf("Número do processo original: %d\n", (int)getpid());
+
 child_1 = fork();
-if(child_1 == 0){
-printf("Filho 1: %d\n", (int)getpid());
-}
-else
-child_2 = fork();
+	
+	if(child_1 == 0){
+		printf("Filho 1: %d\n", (int)getpid());
+	}
+	else
+		child_2 = fork();
 return 0;
 }
 ```
@@ -42,6 +44,7 @@ $ 12 13 14 15 16 17 18
 $ 19 20 21 22 23 24 25
 $ 26 27 28 29 30 31
 ```
+```
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
@@ -58,9 +61,11 @@ for(i; i< argc; i++)
 	printf("\n");
 return 0;
 }
+```
 
 3. Crie um código em C que recebe o nome de diversos comandos pelos argumentos de entrada (`argc` e `*argv[]`), e executa cada um usando `fork()` e `exec()`.
 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -68,7 +73,7 @@ return 0;
 
 
 int main(int argc, char** argv){
-	int i;
+int i;
 	
 	for (i = 1; i < argc; i++){
 		if(fork()==0){
@@ -79,7 +84,7 @@ int main(int argc, char** argv){
 		}
 	}
 }
-
+```
 4. Crie um código em C que gera três processos-filho usando o `fork()`, e que cada processo-filho chama a seguinte função uma vez:
 
 ```C
