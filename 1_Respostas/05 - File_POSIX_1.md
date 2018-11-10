@@ -62,16 +62,16 @@
 3 -    Considerando a norma POSIX, responda:
 (a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
  
-   Abrir:  int open (const char*path(1), int oflag(2), ..);
+    Abrir:  int open (const char*path(1), int oflag(2), ..);
     (1) - caminho do arquivo
     (2) - Flag de abertura (O_WRONLY, O_RDONLY,O_RDWR, O_CREAT)
 
-  Fechar: int close(int fildes(1))
+    Fechar: int close(int fildes(1))
     (1) - Descrição de arquivo.
 
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
 
-  ssize_t(1) write(int fildes(2), const void *buf(3), size_t nbyte(4))
+    ssize_t(1) write(int fildes(2), const void *buf(3), size_t nbyte(4))
   
     (1) - Numero de bytes escritos ou erro
     (2) - Descritor de arquivo
@@ -80,7 +80,7 @@
     
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
    
-   ssize_t(1) read(int fildes(2), void *buf(3), size_t nbyte(4))
+    ssize_t(1) read(int fildes(2), void *buf(3), size_t nbyte(4))
    
     (1) - Numero de bytes lidos ou erro ou EOF
     (2) - Descritor de arquivo
