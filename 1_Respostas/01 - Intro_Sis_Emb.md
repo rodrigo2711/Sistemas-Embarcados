@@ -16,14 +16,10 @@
 4 - Cite arquiteturas possíveis e as diferenças entre elas.
 
 	Existem diversas arquiteturas de hardware e as principais diferenças entre elas estão no propósito de operação.
-         -Microcontroladores (PIC, AVR, MSP) que são mais robustos e dedicados muitas vezes a uma única finalidade, não
-executando muitas tarefas simultaneamente, trata-se de uma arquitetura dedicada.
-        -Processadores de propósito geral (Intel, ARM, Athlon) como o próprio nome indica, não são utilizados para um único
-propósito ou tarefa específica.
-        DPSs são processadores de sinais digitais e são utilizados para a análise e processamento de dados digitais de aplicações
-diversas.
-        SoC (Sistema em chip), esse tipo de arquitetura geralmente engloba o hardware pequeno como dos microcontroladores
-e uma capacidade de processamento maior como os processadores de propósito geral, exemplos são a Raspberry pi, BeagleBone black e outros.
+         -Microcontroladores (PIC, AVR, MSP) que são mais robustos e dedicados muitas vezes a uma única finalidade, não executando muitas tarefas simultaneamente, trata-se de uma arquitetura dedicada.
+        -Processadores de propósito geral (Intel, ARM, Athlon) como o próprio nome indica, não são utilizados para um único propósito ou tarefa específica.
+        DPSs são processadores de sinais digitais e são utilizados para a análise e processamento de dados digitais de aplicações diversas.
+        SoC (Sistema em chip), esse tipo de arquitetura geralmente engloba o hardware pequeno como dos microcontroladores e uma capacidade de processamento maior como os processadores de propósito geral, exemplos são a Raspberry pi, BeagleBone black e outros.
 
 5 - Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
 	
