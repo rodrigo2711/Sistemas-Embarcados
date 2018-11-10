@@ -21,10 +21,15 @@
 
 4. Apresente 3 formas de acesso remoto ao Raspberry Pi.
               
-       Servidor Local: 
+       Servidor Local(pelo VNC), SSH e pelo protocolo RDP.
+       
 5. Apresente as formas possíveis de compilação de código em C para o Raspberry Pi.
 
+       Pode ser compilado pelos programas que ja possuem o compilador de C, mas também pelo terminal através do gcc. Pode ser feita tanto dentro da rasp como remotamente.
+       
 6. Apresente as formas possíveis de compilação de código em Python para o Raspberry Pi.
+       
+       Python é interpretada e pseudo-compilada. Também pode ser executada tanto por programas quanto pelo terminal.      
 
 
 
