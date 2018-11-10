@@ -26,23 +26,23 @@ Para todas as questões, utilize as funções da norma POSIX (open(), close(), w
   
 2 -    Crie um código em C que pergunta ao usuário seu nome e sua idade, e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
-  #include <stdio.h>
-  #include <stdlib.h>
-  #include <unistd.h>
-  #include <fcntl.h>
-  #include <termios.h>
-  #include <string.h>
+      #include <stdio.h>
+      #include <stdlib.h>
+      #include <unistd.h>
+      #include <fcntl.h>
+      #include <termios.h>
+      #include <string.h>
 
-  int main(){
+      int main(){
 
-  char nome[30];
-  char buf[30];
-  int fp,idade, i=0;
+      char nome[30];
+      char buf[30];
+      int fp,idade, i=0;
 
-  printf("Digite seu nome: ");
-  scanf("%s", nome);
-  printf("Digite sua idade: ");
-  scanf("%d", &idade);
+      printf("Digite seu nome: ");
+      scanf("%s", nome);
+      printf("Digite sua idade: ");
+      scanf("%d", &idade);
 
     fp = open("questao2.txt", O_WRONLY | O_CREAT, S_IRWXU);	
 
@@ -64,35 +64,31 @@ $ Idade: 30 anos
 *argv[]), e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado 
 recebeu o nome de 'ola_usuario_2':
 
-  #include <stdio.h>
-  #include <stdlib.h>
-  #include <unistd.h>
-  #include <fcntl.h>
-  #include <termios.h>
-  #include <string.h>
+      #include <stdio.h>
+      #include <stdlib.h>
+      #include <unistd.h>
+      #include <fcntl.h>
+      #include <termios.h>
+      #include <string.h>
 
-  int main(int argc, char*argv[]){
+      int main(int argc, char*argv[]){
 
-  char nome[30];
-  char buf[60];
-  int fp,idade, i=0;
+      char nome[30];
+      char buf[60];
+      int fp,idade, i=0;
 
+      fp = open("questao2.txt", O_WRONLY | O_CREAT, S_IRWXU);	
 
+      sprintf(buf,"Nome: %s\nIdade: %s\n", argv[1], argv[2]);
+      write(fp,buf,strlen(buf));
+      close(fp);
+      return 0;
+      }
 
-    fp = open("questao2.txt", O_WRONLY | O_CREAT, S_IRWXU);	
-
-    sprintf(buf,"Nome: %s\nIdade: %s\n", argv[1], argv[2]);
-    write(fp,buf,strlen(buf));
-    close(fp);
-
-    return 0;
-  }
-
-
-$ ./ola_usuario_2 Eu 30
-$ cat Eu.txt
-$ Nome: Eu
-$ Idade: 30 anos
+    $ ./ola_usuario_2 Eu 30
+    $ cat Eu.txt
+    $ Nome: Eu
+    $ Idade: 30 anos
 
 4 -     Crie uma função que retorna o tamanho de um arquivo, usando o seguinte protótipo: int tam_arq_texto(char *nome_arquivo); 
 Salve esta função em um arquivo separado chamado 'bib_arqs.c'. Salve o protótipo em um arquivo chamado 'bib_arqs.h'. 
