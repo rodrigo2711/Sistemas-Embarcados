@@ -1,22 +1,18 @@
 1 - Por que o Linux recebeu esse nome?
 
-  O nome Linux surgiu da mistura de Linus + Unix. Linus é o nome do criador do Linux, Linus Torvalds. E Unix, é o nome de um 
-sistema operacional de grande porte.
+    O nome Linux surgiu da mistura de Linus + Unix. Linus é o nome do criador do Linux, Linus Torvalds. E Unix, é o nome de um sistema operacional de grande porte.
 
 2 - O que são daemons?
  
-  É um programa de computador que executa como um processo em plano de fundo, em vez de estar sob o controle direto de 
-um usuário interativo.
+     É um programa de computador que executa como um processo em plano de fundo, em vez de estar sob o controle direto de um usuário interativo.
 
 3 - O que é o shell?
 
-  É o intérprete de comandos, ou seja, é a interface entre o usuário e o sistema operacional, e é por esta razão que seu 
-nome em inglês é shell.
+     É o intérprete de comandos, ou seja, é a interface entre o usuário e o sistema operacional, e é por esta razão que seu nome em inglês é shell.
 
 4 - Por que é importante evitar executar o terminal como super-usuário?
        
-       Pois quando você está como super usuário, possui o controle total sobre o sistema, e caso não tenha senha, a segurança
-se torna arriscada, podendo alguém manipular todos os processos do seu computador.
+       Pois quando você está como super usuário, possui o controle total sobre o sistema, e caso não tenha senha, a segurança se torna arriscada, podendo alguém manipular todos os processos do seu computador.
 
 5 - Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
         
@@ -42,62 +38,62 @@ se torna arriscada, podendo alguém manipular todos os processos do seu computad
         
 (d) Trocar de pasta. 
    
-   cd <nome da pasta>;
+    cd <nome da pasta>;
         
 (e) Criar uma pasta. 
    
-   mkdir <nome da pasta>;
+    mkdir <nome da pasta>;
 
 (f) Apagar arquivos definitivamente. 
    
-   rm <nome do arquivo>
+    rm <nome do arquivo>
 
 (g) Apagar pastas definitivamente.
    
-   rm -r <nome da pasta>
+     rm -r <nome da pasta>
         
 (h) Copiar arquivos. 
    
-   cp <nome do arquivo> <diretório>
+     cp <nome do arquivo> <diretório>
     
 (i) Copiar pastas. 
    
-   cp -r <nome do arquivo> <diretório>   
+     cp -r <nome do arquivo> <diretório>   
          
 (j) Mover arquivos.
    
-   mv <origem> <destino>
+     mv <origem> <destino>
     
 (k) Mover pastas. 
   
-  mv -r <origem> <destino> 
+    mv -r <origem> <destino> 
 
 (l) Renomear pastas. 
   
-  mv -r <nome atual> <nome novo>
+     mv -r <nome atual> <nome novo>
 
 (m) Apresentar o conteúdo de um arquivo. 
  
- cat <nome do arquivo>
+     cat <nome do arquivo>
 
 (n) Apresentar o tipo de um arquivo.
   
-  grep | <tipo>
+    grep | <tipo>
 
 (o) Limpar a tela do terminal. 
  
- clear ou ctrl+l
+    clear ou ctrl+l
   
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto. 
  
- comando grep
+     comando grep
 
 (q) Ordenar informações em um arquivo-texto. 
 
 
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto. 
  
- comando sed g
+     comando sed g
 
 (s) Conferir se dois arquivos são iguais. 
 
