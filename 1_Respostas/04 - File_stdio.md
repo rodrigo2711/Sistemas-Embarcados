@@ -4,6 +4,7 @@ Para todas as questões, utilize as funções da biblioteca stdio.h de leitura e
 
 1 -    Crie um código em C para escrever "Ola mundo!" em um arquivo chamado 'ola_mundo.txt'.
 
+```
       #include<stdio.h>
       #include<stdlib.h>
       #include<string.h>
@@ -21,10 +22,11 @@ Para todas as questões, utilize as funções da biblioteca stdio.h de leitura e
       fclose(fp);
       return 0;
       }
-
+```
 
 2 -  Crie um código em C que pergunta ao usuário seu nome e sua idade, e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
+```
       #include<stdio.h>
       #include<stdlib.h>
       #include<string.h>
@@ -57,10 +59,11 @@ Para todas as questões, utilize as funções da biblioteca stdio.h de leitura e
       $ cat rodrigo.txt
       $ Nome: Rodrigo
       $ Idade: 23 anos
-
+```
 
 3 -    Crie um código em C que recebe o nome do usuário e e sua idade como argumentos de entrada (usando as variáveis argc e *argv[]), e escreve este conteúdo em um arquivo com o seu nome e extensão '.txt'. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_2':
-      
+   
+```
       #include<stdio.h>
       #include<stdlib.h>
       #include<string.h>
@@ -86,11 +89,12 @@ Para todas as questões, utilize as funções da biblioteca stdio.h de leitura e
       fclose(fp);
       return 0;
       }
-      
+     
       $ ./ola_usuario_2 Rodrigo 23
       $ cat rodrigo4_2.txt
       $ Nome: Rodrigo
       $ Idade: 23 anos
+```
 
 4 -    Crie uma função que retorna o tamanho de um arquivo, usando o seguinte protótipo: int tam_arq_texto(char *nome_arquivo); Salve esta função em um arquivo separado chamado 'bib_arqs.c'. Salve o protótipo em um arquivo chamado 'bib_arqs.h'. Compile 'bib_arqs.c' para gerar o objeto 'bib_arqs.o'.
       
@@ -100,6 +104,7 @@ Para todas as questões, utilize as funções da biblioteca stdio.h de leitura e
 
   6 -  Crie um código em C que copia a funcionalidade básica do comando cat: escrever o conteúdo de um arquivo-texto no terminal. Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de 'cat_falsificado':
      
+```
       #include<stdio.h>
       #include<stdlib.h>
       #include<string.h>
@@ -124,14 +129,17 @@ Para todas as questões, utilize as funções da biblioteca stdio.h de leitura e
 
       return 0;
       }
+      
 $ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
 $ ./cat_falsificado ola.txt
 $ Ola mundo cruel! Ola universo ingrato!
+```
 
   7 -  Crie um código em C que conta a ocorrência de uma palavra-chave em um arquivo-texto, e escreve o resultado no terminal. Reaproveite as funções já criadas nas questões anteriores. Por exemplo, considerando que o código criado recebeu o nome de 'busca_e_conta':
-      
+  
+ ```
 $ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
 $ ./busca_e_conta Ola ola.txt
 $ 'Ola' ocorre 2 vezes no arquivo 'ola.txt'.
-
+```
 
