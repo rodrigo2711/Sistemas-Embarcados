@@ -51,7 +51,10 @@ int main(){
 
 	//abrindo valor do pino 21
 	pfd.fd = open("/sys/class/gpio/gpio21/value",O_RDONLY);
-	if(pfd.fd < 0){printf("Error"); exit(1);}
+	if(pfd.fd < 0){
+	printf("Error"); 
+	exit(1);
+	}
 	puts("Definindo value...");
 
 	//eventos revents do pino 21
