@@ -1,65 +1,76 @@
 1. Crie dois processos, e faça com que o processo-filho gere uma onda quadrada, enquanto o processo-pai faz polling de um botão no GPIO, aumentando a frequência da onda sempre que o botão for pressionado. A frequência da onda quadrada deve começar em 1 Hz, e dobrar cada vez que o botão for pressionado. A frequência máxima é de 64 Hz, devendo retornar a 1 Hz se o botão for pressionado novamente.
-
-#include <wiringPi.h>
+```
 #include <unistd.h>
+#include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <signal.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/poll.h>
+
+int fd;
+
+void fechar(){
+	close(fd);
+	fd = open("/sys/class/gpio/unexport",O_WRONLY);
+	write(fd,"21",2);
+	close(fd);
+	printf("Fechando programa\n");
+	sleep(1);
+	exit(0);
+}
+
 
 int main(){
-  struct pollfd pfd;
-  char buffer;
-  int led = 4, btn = 1, t = 0, tr = 0;
-  float f = 1, T = 1;
-  pid_t pid; //process
-  int fd[2];  //pipe
 
-   pid = fork(); 
-   pipe(fd); 
+	struct pollfd pfd;
+	char buffer;
+	int btn = 1;
 
-   wiringPiSetup();
-     if(pid == 0) //filho
-     { 
-       while(1)
-       {
-         close(fd[1]); 
-         printf("Processo filho criado!\n");
-         read(fd[0], &tr, sizeof(tr)); 
-         printf("Valor de t lido no filho: %d \n", tr);
-         digitalWrite(led, LOW);
-         usleep(tr);
-         digitalWrite(led, HIGH);
-         usleep(tr);
-       }
-     }
-     else //pai
-     {
-       printf("processo pai criado\n");
-       while (1)
-       {
-         usleep(50000);
-         if(digitalRead(btn)==1)
-         {
-           close(fd[0]); 
-           printf("Valor de t escrito: %d\n", t);
+	signal(SIGINT,fechar);
 
-           f = 2*f;
-           if(f>64)
-           f = 1;
-           T = (1/(2*f))*1000000;
-           t = (int) T;
-           write(fd[1], &t, sizeof(t)); 
-         }
-       }
-     }
-     return 0;
-   }
+	//export pino 21
+	fd = open("/sys/class/gpio/export",O_WRONLY);
+	write(fd,"21",2);
+	close(fd);
+	puts("Definindo export...");
 
+	//edge pino 21
+	fd = open("/sys/class/gpio/gpio21/edge",O_WRONLY);
+	write(fd,"falling",7);
+	close(fd);
+	puts("Definindo edge...");
 
+	//direction pino 21
+	fd = open("/sys/class/gpio/gpio21/direction",O_WRONLY);
+	write(fd,"in",2);
+	close(fd);
+	puts("Definindo direction...");
 
+	//abrindo valor do pino 21
+	pfd.fd = open("/sys/class/gpio/gpio21/value",O_RDONLY);
+	if(pfd.fd < 0){printf("Error"); exit(1);}
+	puts("Definindo value...");
 
+	//eventos revents do pino 21
+	pfd.events = POLLPRI | POLLERR;
+	pfd.revents = 0;
 
+	//programa
+	printf("Aumentando a frequencia por borta de descida...\n");
+	while(1)
+	{
+		printf("Frequência = %d\n",btn);
+		lseek(pfd.fd, 0, SEEK_SET);
+		read(pfd.fd, &buffer, 1);
+		poll(&pfd, 1, -1);
+		btn = 2*btn;
+		if(btn == 128) btn=1;
+		usleep(100000);
+	}
 
-
-
-
+	return 0;
+}
+```
