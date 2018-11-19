@@ -2,11 +2,12 @@
 
 (a) Quais pinos podem ser utilizados como entradas e saídas digitais comuns?
   
-    Pinos: 0, 1, 4, 7, 8, 9, 10, 11, 14, 15, 17, 18, 21, 22, 23, 24, 25
+    Pinos: 4, 17, 27, 22, 18, 23, 24, 5, 6, 13, 19, 26, 12, 16, 20, 21
     
 (b) Quais pinos possuem resistores de pull-up e pull-down?
 
-
+     GPIO 2 e 3
+  
 (c) Quais formas de comunicação serial são suportados pelos pinos GPIO?
 
     I2C, SPI e UART. 
