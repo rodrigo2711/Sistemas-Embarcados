@@ -2,7 +2,7 @@
 
 (a) Quais pinos podem ser utilizados como entradas e saídas digitais comuns?
   
-    Pinos: 4, 17, 27, 22, 18, 23, 24, 5, 6, 13, 19, 26, 12, 16, 20, 21
+    GPIO's: 4, 17, 27, 22, 18, 23, 24, 5, 6, 13, 19, 26, 12, 16, 20, 21
     
 (b) Quais pinos possuem resistores de pull-up e pull-down?
 
