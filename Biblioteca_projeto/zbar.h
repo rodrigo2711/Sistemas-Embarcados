@@ -1,4 +1,4 @@
-*------------------------------------------------------------------------
+/*------------------------------------------------------------------------
  *  Copyright 2007-2010 (c) Jeff Brown <spadix@users.sourceforge.net>
  *
  *  This file is part of the ZBar Bar Code Reader.
