@@ -1,9 +1,8 @@
 #include "gpio_sysfs.h"
 #include <unistd.h>
 
-
-int main()
-{
+int main(){
+	
 	int pin1=18;
 	int pin2=23;
 	int pin3=24;
@@ -32,6 +31,4 @@ int main()
 	if(unsetGPIO(pin2))
 		return 2;
 	return 0;
-
-
 }
